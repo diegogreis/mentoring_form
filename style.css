@@ -1,0 +1,259 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set fonts */
+h1, legend, button {
+  font-family: 'Staatliches', cursive;
+}
+
+p, label, h2, input {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body elements */
+body {
+  background: #BFD7E4;
+}
+
+body::before {
+  content: '';
+  width: 100vw;
+  height: 465px;
+  background: #293241;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 107px;
+  padding-bottom: 32px;
+  color: white;
+  height: 332px;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+header img {
+  margin-top: 20px;
+}
+
+/* Main */
+main {
+  width: 750px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+.legend-1 {
+  width: 750px;
+  height: 133px;
+  background: #F67669;
+  border-radius: 20px 20px 0px 0px;
+  color: white;
+  font-family: 'Staatliches', cursive;
+  font-size: 12px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form */
+form {
+  width: 750px;
+  background: #FFFFFF;
+  border-radius: 0px 0px 20px 20px;
+  padding: 31px 64px 64px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+fieldset {
+  border: none;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-wrapper {
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 18px;
+}
+
+.side-wrapper input {
+  width: 300px;
+}
+
+label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+  margin-bottom: 8px;
+}
+
+label span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
+}
+
+label span:hover {
+  color: #6e6c72;
+}
+
+form input {
+  height: 55px;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #75727c;
+  padding: 15px;
+}
+
+form legend {
+  font-size: 24px;
+  line-height: 34px;
+  color: #253B51;
+  text-align: center;
+}
+
+.line {
+  border: 0.5px solid #E6E6F0;
+  margin: 8px 0 31px 0;
+}
+
+form select {
+  height: 55px;
+  width: 300px;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #75727c;
+  padding: 15px;
+  appearance: none;
+  background-image: url(./img/select.svg);
+  background-repeat: no-repeat;
+  background-position: right 8px top 50%;
+  margin-bottom: 31px;
+}
+
+textarea {
+  height: 167px;
+  width: 622px;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #75727c;
+  padding: 15px;
+}
+
+.check-wrapper {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+  position: relative;
+  margin-top: 30px;
+}
+
+.check-wrapper label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.check-wrapper input {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  opacity: 0;
+}
+
+.check-wrapper label::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+.check-wrapper input:checked + label::before {
+  background-image: url(./img/checked.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Date Fieldset */
+.date-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.date-wrapper > :nth-child(1) {
+  width: 100%;
+}
+
+form button {
+  width: 100%;
+  height: 51px;
+  color: white;
+  border: none;
+  background: #F67669;
+  border-radius: 8px;
+  margin-top: 64px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #9b4d44;;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus,
+.check-wrapper input:focus + label::before {
+  outline: 1px solid #F67669;
+  box-shadow: 0 0 2px #F67669;
+}
+
+
+
+
+
+
+
+
